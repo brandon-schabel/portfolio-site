@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import {ThemeProvider} from "styled-components"
-import {Section, Nav} from '../index'
+import {Section, Nav, Footer, Interests, ContactMe, AboutMe} from '../index'
 
 const themes = [
   {
