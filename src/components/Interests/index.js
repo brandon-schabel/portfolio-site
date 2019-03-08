@@ -1,5 +1,5 @@
 import React from "react"
-import { Section, FlexWrapper, ItemWrap } from "../index"
+import { Section, FlexWrapper, ItemWrap, Image } from "../index"
 // https://www.flaticon.com/
 //https://www.flaticon.com/free-icon/camera_918194
 // https://www.flaticon.com/free-icon/camera_1042339#term=camera&page=1&position=29
@@ -17,18 +17,18 @@ const index = () => {
     <Section desktopHeight="500px">
       <FlexWrapper desktopFlexDirection="row">
         <ItemWrap width="100px" height="100px">
-          <img height="100px" width="100px" src={Camera} alt="camera"/>
+          <Image src={Camera} alt="camera" />
         </ItemWrap>
         <ItemWrap width="100px" height="100px">
-          <img  height="100px" width="100px"  src={Computer} alt="computer" />
+          <Image src={Computer} alt="computer" />
         </ItemWrap>
       </FlexWrapper>
       <FlexWrapper desktopFlexDirection="row">
         <ItemWrap width="100px" height="100px">
-          <img height="100px" width="100px" src={Car}  alt="car"/>
+          <Image src={Car} alt="car" />
         </ItemWrap>
         <ItemWrap width="100px" height="100px">
-          <img height="100px" width="100px"  src={Electronics} alt="electronics" />
+          <Image src={Electronics} alt="electronics" />
         </ItemWrap>
       </FlexWrapper>
       Interests
