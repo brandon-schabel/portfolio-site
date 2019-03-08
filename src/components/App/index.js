@@ -27,10 +27,10 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div >
       <Nav></Nav>
-        <Section>
-          
-        </Section>
-        test
+        <AboutMe></AboutMe>
+        <Interests></Interests>
+        <ContactMe></ContactMe>
+        <Footer></Footer>
       </div>
       </ThemeProvider>
       
