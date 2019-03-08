@@ -1,10 +1,11 @@
 import React from 'react'
 import {StyledSection} from './styles'
 
-const Section = ({children}) => {
+const Section = (props) => {
+  console.log(props)
   return (
-    <StyledSection>
-      {children}
+    <StyledSection {...props}>
+      {props.children}
     </StyledSection>
   )
 }

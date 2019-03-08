@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Input, Button} from 'antd'
 import axios from 'axios'
+import {Section, FlexWrapper} from '../index';
 const {TextArea} = Input;
 
 const contactMeAPI = process.env.REACT_APP_AWS_API
@@ -35,7 +36,8 @@ const index = () => {
     })
   }
   return (
-    <div>
+    <Section>
+      <FlexWrapper width="50%">
     {formSubmitted && <h3>Thank you for contacting me, I will get back to you shortly.</h3>}
       Name: 
       <Input name="name" onChange={handleChange}></Input>
@@ -44,7 +46,9 @@ const index = () => {
       Message: 
       <TextArea name="message" onChange={handleChange}></TextArea>
       <Button onClick={handleSubmit} disabled={formSubmitted}>Submit</Button>
-    </div>
+      </FlexWrapper>
+    </Section>
+    
   )
 }
 

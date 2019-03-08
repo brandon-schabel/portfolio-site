@@ -1,11 +1,11 @@
 import React from 'react'
-import {Interests} from '../index'
+import {Section} from '../index'
 
 const index = () => {
   return (
-    <div>
+    <Section>
       Interests
-    </div>
+    </Section>
   )
 }
 
