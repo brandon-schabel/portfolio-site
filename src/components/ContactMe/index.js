@@ -23,21 +23,19 @@ const index = () => {
   }
 
   const handleSubmit = e => {
-    console.log(contactMeAPI);
+
     axios.post(contactMeAPI, formData).then( response => {
-      console.log(response)
       if(response.status === 200 || response.status === 204) {
         setFormData({name: '', contactEmail: '', message: ''})
         setFormSubmitted(true)
       }
     }).catch((error) => {
       console.log(error)
-      console.log(error.response)
     })
   }
   return (
-    <Section>
-      <FlexWrapper width="50%">
+    <Section height="500px">
+      <FlexWrapper width="50%"  height="500px">
     {formSubmitted && <h3>Thank you for contacting me, I will get back to you shortly.</h3>}
       Name: 
       <Input name="name" onChange={handleChange}></Input>
