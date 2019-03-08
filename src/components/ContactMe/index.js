@@ -37,6 +37,7 @@ const index = () => {
   }
   return (
     <Section desktopHeight="500px" tabletHeight="600px" mobileHeight="600px">
+      <h3>Questions? Please Contact Me Below!</h3>
       {formSubmitted && (
         <div>
           <h3>Thank you for contacting me, I will get back to you shortly.</h3>
