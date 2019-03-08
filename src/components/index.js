@@ -4,6 +4,7 @@ import ContactMe from './ContactMe'
 import FlexWrapper from './shared/FlexWrapper'
 import Footer from './Footer'
 import Interests from './Interests'
+import ItemWrap from './shared/ItemWrap'
 import Nav from './Nav'
 import Section  from './shared/Section'
 
@@ -14,6 +15,7 @@ export {
   FlexWrapper,
   Footer,
   Interests,
+  ItemWrap,
   Nav,
   Section,
 }
