@@ -14,6 +14,9 @@ const FlexWrapper = styled.div`
   justify-content: ${({ mobileJustifyContent }) =>
     mobileJustifyContent ? mobileJustifyContent : "center"};
 
+  margin-top: ${({marginTop}) => marginTop ? marginTop : '0px'};
+  margin-bottom: ${({marginBottom}) => marginBottom ? marginBottom : '0px'};
+
   ${media.tablet`
   width: ${({ tabletWidth }) => (tabletWidth ? tabletWidth : "100%")};
     height: ${({ tabletHeight }) => (tabletHeight ? tabletHeight : "250px")};
