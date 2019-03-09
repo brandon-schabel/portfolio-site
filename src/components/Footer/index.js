@@ -4,7 +4,7 @@ import { Section, sizes } from ".."
 
 const index = () => {
   return (
-    <Section mobileHeight="100px" desktopHeight="100px" tabletHeight="100px">
+    <Section mobileHeight="100px" desktopHeight="100px" tabletHeight="100px" backgroundColor="#bdc3c7">
       <MediaQueries maxWidth={sizes.tablet}>
         <div>Copyright © Brandon Schabel 2019</div>
         <div>

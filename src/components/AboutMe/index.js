@@ -9,7 +9,7 @@ import {
   rightColumnTitle
 } from "./Descriptions"
 
-import { DescriptionWrapper } from "./styles"
+import { DescriptionWrapper, StyledA } from "./styles"
 
 import { Modal, Button, Icon, Header } from "semantic-ui-react"
 
@@ -21,7 +21,6 @@ const index = () => {
   const openModal2 = () => setIsModal2Open(true)
 
   const closeModal1 = () => setIsModal1Open(false)
-
   const closeModal2 = () => setIsModal2Open(false)
 
   return (
@@ -44,9 +43,9 @@ const index = () => {
         </DescriptionWrapper>
         <Modal
           trigger={
-            <a>
+            <StyledA>
               <p onClick={openModal1}>Read More Here...</p>
-            </a>
+            </StyledA>
           }
           basic
           size="small"
@@ -76,9 +75,9 @@ const index = () => {
         </DescriptionWrapper>
         <Modal
           trigger={
-            <a>
+            <StyledA>
               <p onClick={openModal2}>Read More Here...</p>
-            </a>
+            </StyledA>
           }
           basic
           size="small"

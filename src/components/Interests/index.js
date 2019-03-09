@@ -64,7 +64,7 @@ const index = () => {
 
   return (
     <Section desktopHeight="550px" tabletHeight="500px" mobileHeight="1000px">
-      Interests
+      <h2>Interests</h2>
       <Desktop
         modalData={modalData}
         openModalHandler={openModalHandler}

@@ -8,9 +8,9 @@ export const StyledImage = styled.img`
   box-sizing: border-box;
   transition: all .2s ease-in;
   cursor: pointer;
+
   &:hover{
     transition: all .2s ease-in-out;
     transform: scale(1.1);
   }
-
 `
