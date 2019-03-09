@@ -1,6 +1,7 @@
-import React, {useState} from "react"
-import { Section, FlexWrapper, ItemWrap, Image, sizes } from "../index"
+import React from "react"
+import { Image, sizes } from "../index"
 import MediaQuery from "react-responsive"
+import ModalImage from "./ModalImage"
 
 // https://www.flaticon.com/
 //https://www.flaticon.com/free-icon/camera_918194
@@ -14,29 +15,52 @@ import Computer from "./assets/coding.png"
 import Car from "./assets/electric-car.png"
 import Electronics from "./assets/electronic.png"
 
-const defaultModals = {
-  camera: false,
-  computer: false,
-  car: false,
-  electronics: false
-}
-
-const Mobile = () => {
-  const [modals, setModals] = useState(defaultModals)
+const Mobile = ({ modalData, imageClickHandler, closeModalHandler }) => {
   return (
-      <MediaQuery maxWidth={sizes.tablet}>
-        <Image src={Camera} alt="camera" height="225px" width="225px" />
-
-        <Image src={Computer} alt="computer" height="225px" width="225px" />
-        <Image src={Car} alt="car" height="225px" width="225px" />
-
+    <MediaQuery maxWidth={sizes.tablet}>
+      <ModalImage data={modalData[0]} closeModalHandler={closeModalHandler}>
         <Image
+          name="camera"
+          src={Camera}
+          alt="camera"
+          height="225px"
+          width="225px"
+          onClick={imageClickHandler}
+        />
+      </ModalImage>
+      <ModalImage data={modalData[1]} closeModalHandler={closeModalHandler}>
+        <Image
+          name="computer"
+          src={Computer}
+          alt="computer"
+          height="225px"
+          width="225px"
+          onClick={imageClickHandler}
+        />
+      </ModalImage>
+
+      <ModalImage data={modalData[2]} closeModalHandler={closeModalHandler}>
+        <Image
+          name="car"
+          src={Car}
+          alt="car"
+          height="225px"
+          width="225px"
+          onClick={imageClickHandler}
+        />
+      </ModalImage>
+
+      <ModalImage data={modalData[3]} closeModalHandler={closeModalHandler}>
+        <Image
+          name="electronics"
           src={Electronics}
           alt="electronics"
           height="225px"
           width="225px"
+          onClick={imageClickHandler}
         />
-      </MediaQuery>
+      </ModalImage>
+    </MediaQuery>
   )
 }
 
