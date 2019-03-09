@@ -28,6 +28,7 @@ const Mobile = ({ modalData, openModalHandler, closeModalHandler }) => {
           alt="camera"
           height="225px"
           width="225px"
+          clickPointer={true}
         />
       </ModalImage>
       <ModalImage
@@ -40,6 +41,7 @@ const Mobile = ({ modalData, openModalHandler, closeModalHandler }) => {
           alt="computer"
           height="225px"
           width="225px"
+          clickPointer={true}
         />
       </ModalImage>
 
@@ -47,7 +49,7 @@ const Mobile = ({ modalData, openModalHandler, closeModalHandler }) => {
         data={modalData[2]}
         closeModalHandler={closeModalHandler}
         openModalHandler={openModalHandler}>
-        <Image name="car" src={Car} alt="car" height="225px" width="225px" />
+        <Image name="car" src={Car} alt="car" height="225px" width="225px" clickPointer={true} />
       </ModalImage>
 
       <ModalImage
@@ -60,7 +62,7 @@ const Mobile = ({ modalData, openModalHandler, closeModalHandler }) => {
           alt="electronics"
           height="225px"
           width="225px"
-          onClick={openModalHandler}
+          clickPointer={true}
         />
       </ModalImage>
     </MediaQuery>

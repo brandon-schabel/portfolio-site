@@ -36,7 +36,7 @@ const index = () => {
       })
   }
   return (
-    <Section desktopHeight="500px" tabletHeight="450px" mobileHeight="375px">
+    <Section desktopHeight="500px" tabletHeight="450px" mobileHeight="375px" backgroundColor="#ecf0f1">
       <h3>Questions? Please Contact Me Below!</h3>
       {formSubmitted && (
         <div>
@@ -46,7 +46,7 @@ const index = () => {
       )}
       <FlexWrapper
         desktopWidth="30%"
-        tabletWidth="50%"
+        tabletWidth="40%"
         mobileWidth="80%"
         mobileHeight="100%"
         marginTop="20px"

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { ThemeProvider } from "styled-components"
-import { Nav, Footer, Interests, ContactMe, AboutMe } from "../index"
+import { Nav, Footer, Interests, ContactMe, AboutMe, Header } from "../index"
 
 const themes = [
   {
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <Nav />
+        <Header/>
         <AboutMe />
         <Interests />
         <ContactMe />

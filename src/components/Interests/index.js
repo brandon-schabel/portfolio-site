@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"
-import { Section, Image, sizes } from "../index"
+import React, { useState } from "react"
+import { Section } from "../index"
 import Desktop from "./Desktop"
 import Mobile from "./Mobile"
 
@@ -37,7 +37,6 @@ const initModalData = [
 const index = () => {
   const [modalData, setModalData] = useState(initModalData)
 
-
   const openModalHandler = data => {
     let newModalData = modalData
 
@@ -46,7 +45,7 @@ const index = () => {
         el.isOpen = true
       }
     })
-    
+
     setModalData([...newModalData])
   }
 
@@ -58,13 +57,13 @@ const index = () => {
         el.isOpen = false
       }
     })
-    
+
     setModalData([...newModalData])
   }
 
   return (
-    <Section desktopHeight="550px" tabletHeight="500px" mobileHeight="1000px">
-      <h2>Interests</h2>
+    <Section desktopHeight="625px" tabletHeight="625px" mobileHeight="1000px" backgroundColor="#34495e">
+      <h2 style={{color: 'white'}}>Interests</h2>
       <Desktop
         modalData={modalData}
         openModalHandler={openModalHandler}

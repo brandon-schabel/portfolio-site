@@ -2,12 +2,16 @@ import React from "react"
 import MediaQueries from 'react-responsive'
 import { Section, sizes } from ".."
 
+const whiteText = {
+  color: "white"
+}
+
 const index = () => {
   return (
-    <Section mobileHeight="100px" desktopHeight="100px" tabletHeight="100px" backgroundColor="#bdc3c7">
+    <Section mobileHeight="100px" desktopHeight="100px" tabletHeight="100px" backgroundColor="#34495e">
       <MediaQueries maxWidth={sizes.tablet}>
-        <div>Copyright © Brandon Schabel 2019</div>
-        <div>
+        <div style={whiteText}>Copyright © Brandon Schabel 2019</div>
+        <div style={whiteText}>
           Icons made by{" "}
           <a href="https://www.freepik.com/" title="Freepik">
             Freepik{" "}
@@ -19,13 +23,13 @@ const index = () => {
             Prosymbols
           </a>{" "}
         </div>
-        <div>
+        <div style={whiteText}>
           from{" "}
           <a href="https://www.flaticon.com/" title="Flaticon">
             www.flaticon.com
           </a>
         </div>
-        <div>
+        <div style={whiteText}>
           {" "}
           and are licensed by{" "}
           <a
@@ -38,8 +42,8 @@ const index = () => {
       </MediaQueries>
 
       <MediaQueries minWidth={sizes.tablet}>
-      <div>Copyright © Brandon Schabel 2019</div>
-      <div>
+      <div style={whiteText}>Copyright © Brandon Schabel 2019</div>
+      <div style={whiteText}>
           Icons made by{" "}
           <a href="https://www.freepik.com/" title="Freepik">
             Freepik{" "}

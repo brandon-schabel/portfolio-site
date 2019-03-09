@@ -3,6 +3,7 @@ import App from "./App"
 import ContactMe from "./ContactMe"
 import FlexWrapper from "./shared/FlexWrapper"
 import Footer from "./Footer"
+import Header from './Header'
 import Image from "./shared/Image"
 import Interests from "./Interests"
 import ItemWrap from "./shared/ItemWrap"
@@ -17,6 +18,7 @@ export {
   ContactMe,
   FlexWrapper,
   Footer,
+  Header,
   Image,
   Interests,
   ItemWrap,

@@ -29,7 +29,9 @@ const index = () => {
       desktopFlexDirection="row"
       desktopHeight="400px"
       tabletHeight="400px"
-      mobileHeight="500px">
+      mobileHeight="500px"
+      backgroundColor="#ecf0f1"
+      >
       <FlexWrapper
         mobileHeight="100%"
         desktopWidth="25%"
@@ -89,7 +91,7 @@ const index = () => {
           </Modal.Content>
           <Modal.Actions>
             <Button basic color="white" inverted onClick={closeModal2}>
-              <Icon name="remove" /> Close
+              <Icon name="remove" />Close
             </Button>
           </Modal.Actions>
         </Modal>

@@ -28,6 +28,7 @@ const Desktop = ({ modalData, openModalHandler, closeModalHandler }) => {
           height="250px"
           width="250px"
           paddingRight="10px"
+          clickPointer={true}
         />
       </ModalImage>
       <ModalImage
@@ -41,6 +42,7 @@ const Desktop = ({ modalData, openModalHandler, closeModalHandler }) => {
           height="250px"
           width="250px"
           paddingLeft="10px"
+          clickPointer={true}
         />
       </ModalImage>
       </FlexWrapper>
@@ -53,7 +55,7 @@ const Desktop = ({ modalData, openModalHandler, closeModalHandler }) => {
         data={modalData[2]}
         closeModalHandler={closeModalHandler}
         openModalHandler={openModalHandler}>
-        <Image name="car" src={Car} alt="car" height="250px" width="250px" paddingRight="10px"/>
+        <Image name="car" src={Car} alt="car" height="250px" width="250px" paddingRight="10px" clickPointer={true}/>
       </ModalImage>
 
       <ModalImage
@@ -68,6 +70,7 @@ const Desktop = ({ modalData, openModalHandler, closeModalHandler }) => {
           width="250px"
           onClick={openModalHandler}
           paddingLeft="10px"
+          clickPointer={true}
         />
       </ModalImage>
       </FlexWrapper>
