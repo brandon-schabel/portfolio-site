@@ -26,9 +26,6 @@ const index = () => {
 
   return (
     <Section
-      // backgroundColor="#2980b9"
-      // mobileFlexDirection="column"
-      // tabletFlexDirection=""
       tabletFlexDirection="row"
       desktopFlexDirection="row"
       desktopHeight="400px"
@@ -41,8 +38,7 @@ const index = () => {
         mobileWidth="80%">
         <DescriptionWrapper paddingLeft="10px" paddingRight="10px">
           <SimpleFlex alignItems="center">
-            {" "}
-            <h3>{leftColumnTitle}</h3>{" "}
+            <h3>{leftColumnTitle}</h3>
           </SimpleFlex>
           <p>{leftColumnShortDescription}</p>
         </DescriptionWrapper>

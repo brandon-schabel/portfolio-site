@@ -1,60 +1,65 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Section, Image, sizes } from "../index"
 import Desktop from "./Desktop"
 import Mobile from "./Mobile"
-import ModalImage from "./ModalImage"
 
 const initModalData = [
   {
     name: "camera",
     isOpen: false,
     modalTitle: "Photography",
-    modalDescription: "This is the description"
+    modalDescription: "This is the description",
+    modalIcon: ""
   },
   {
     name: "computer",
     isOpen: false,
     modalTitle: "Computers and Programming",
-    modalDescription: "This is the description"
+    modalDescription: "This is the description",
+    modalIcon: ""
   },
   {
     name: "car",
     isOpen: false,
     modalTitle: "Electric Vehicles and Renewable Energy",
-    modalDescription: "This is the description"
+    modalDescription: "This is the description",
+    modalIcon: ""
   },
   {
     name: "electronics",
     isOpen: false,
     modalTitle: "DIY Electronics",
-    modalDescription: "This is the description"
+    modalDescription: "This is the description",
+    modalIcon: ""
   }
 ]
 
 const index = () => {
   const [modalData, setModalData] = useState(initModalData)
 
-  const imageClickHandler = e => {
+
+  const openModalHandler = data => {
     let newModalData = modalData
+
     newModalData.forEach(el => {
-      if (el.name === e.target.name) {
+      if (el.name === data.name) {
         el.isOpen = true
       }
     })
-
-    setModalData(newModalData)
+    
+    setModalData([...newModalData])
   }
 
-  const closeModalHandler = modalData => {
-    let newModaData = modalData
+  const closeModalHandler = data => {
+    let newModalData = modalData
 
-    newModaData.forEach(el => {
-      if (el.name === modalData.name) {
+    newModalData.forEach(el => {
+      if (el.name === data.name) {
         el.isOpen = false
       }
     })
-
-    setModalData(newModaData)
+    
+    setModalData([...newModalData])
   }
 
   return (
@@ -62,12 +67,12 @@ const index = () => {
       Interests
       <Desktop
         modalData={modalData}
-        imageClickHandler={imageClickHandler}
+        openModalHandler={openModalHandler}
         closeModalHandler={closeModalHandler}
       />
       <Mobile
         modalData={modalData}
-        imageClickHandler={imageClickHandler}
+        openModalHandler={openModalHandler}
         closeModalHandler={closeModalHandler}
       />
     </Section>

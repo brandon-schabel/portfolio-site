@@ -7,7 +7,7 @@ export const StyledImage = styled.img`
   padding-right: ${({paddingRight}) => paddingRight ? paddingRight : '0px'};
   box-sizing: border-box;
   transition: all .2s ease-in;
-
+  cursor: pointer;
   &:hover{
     transition: all .2s ease-in-out;
     transform: scale(1.1);

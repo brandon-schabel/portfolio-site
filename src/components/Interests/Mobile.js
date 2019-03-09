@@ -15,49 +15,52 @@ import Computer from "./assets/coding.png"
 import Car from "./assets/electric-car.png"
 import Electronics from "./assets/electronic.png"
 
-const Mobile = ({ modalData, imageClickHandler, closeModalHandler }) => {
+const Mobile = ({ modalData, openModalHandler, closeModalHandler }) => {
   return (
     <MediaQuery maxWidth={sizes.tablet}>
-      <ModalImage data={modalData[0]} closeModalHandler={closeModalHandler}>
+      <ModalImage
+        data={modalData[0]}
+        closeModalHandler={closeModalHandler}
+        openModalHandler={openModalHandler}>
         <Image
           name="camera"
           src={Camera}
           alt="camera"
           height="225px"
           width="225px"
-          onClick={imageClickHandler}
         />
       </ModalImage>
-      <ModalImage data={modalData[1]} closeModalHandler={closeModalHandler}>
+      <ModalImage
+        data={modalData[1]}
+        closeModalHandler={closeModalHandler}
+        openModalHandler={openModalHandler}>
         <Image
           name="computer"
           src={Computer}
           alt="computer"
           height="225px"
           width="225px"
-          onClick={imageClickHandler}
         />
       </ModalImage>
 
-      <ModalImage data={modalData[2]} closeModalHandler={closeModalHandler}>
-        <Image
-          name="car"
-          src={Car}
-          alt="car"
-          height="225px"
-          width="225px"
-          onClick={imageClickHandler}
-        />
+      <ModalImage
+        data={modalData[2]}
+        closeModalHandler={closeModalHandler}
+        openModalHandler={openModalHandler}>
+        <Image name="car" src={Car} alt="car" height="225px" width="225px" />
       </ModalImage>
 
-      <ModalImage data={modalData[3]} closeModalHandler={closeModalHandler}>
+      <ModalImage
+        data={modalData[3]}
+        closeModalHandler={closeModalHandler}
+        openModalHandler={openModalHandler}>
         <Image
           name="electronics"
           src={Electronics}
           alt="electronics"
           height="225px"
           width="225px"
-          onClick={imageClickHandler}
+          onClick={openModalHandler}
         />
       </ModalImage>
     </MediaQuery>

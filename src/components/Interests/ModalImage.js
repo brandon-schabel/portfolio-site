@@ -6,34 +6,35 @@ import {
   electricCar,
   electronics
 } from "./Descriptions"
-import {Image} from '../index'
 
-const ModalImage = ({data, closeModalHandler, children}) => {
-  console.log(data)
+const ModalImage = ({ data, closeModalHandler, openModalHandler, children  }) => {
+
+  const handleCloseModal = () => {
+    closeModalHandler(data)
+  }
+
+  const handleOpenModal = () => {
+    openModalHandler(data)
+  }
 
   return (
-    <div>
       <Modal
-        trigger={
-          <div>
-            {children}
-          </div>
-        }
+        trigger={<div onClick={handleOpenModal}>{children}</div>}
         basic
         size="small"
-        open={data.isOpen}>
-        {/* onClose={closeModal1}> */}
-        <Header icon="fighter jet" content={data.modalTitle} />
+        open={data.isOpen}
+        onClose={handleCloseModal}>
+        <Header icon={data.icon} content={data.modalTitle} />
         <Modal.Content>
           <p>{data.modalDescription}</p>
         </Modal.Content>
         <Modal.Actions>
           <Button basic color="white" inverted onClick={handleCloseModal}>
-            <Icon name="remove" /> Close
+            <Icon name="remove" />
+            Close
           </Button>
         </Modal.Actions>
       </Modal>
-    </div>
   )
 }
 
