@@ -8,6 +8,7 @@ import Interests from './Interests'
 import ItemWrap from './shared/ItemWrap'
 import Nav from './Nav'
 import Section  from './shared/Section'
+import { sizes} from './shared/mediaQueries'
 
 export {
   AboutMe,
@@ -20,4 +21,5 @@ export {
   ItemWrap,
   Nav,
   Section,
+  sizes
 }

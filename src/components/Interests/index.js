@@ -1,5 +1,7 @@
 import React from "react"
-import { Section, FlexWrapper, ItemWrap, Image } from "../index"
+import { Section, FlexWrapper, ItemWrap, Image, sizes } from "../index"
+import MediaQuery from "react-responsive"
+
 // https://www.flaticon.com/
 //https://www.flaticon.com/free-icon/camera_918194
 // https://www.flaticon.com/free-icon/camera_1042339#term=camera&page=1&position=29
@@ -14,24 +16,41 @@ import Electronics from "./assets/electronic.png"
 
 const index = () => {
   return (
-    <Section desktopHeight="500px">
-      <FlexWrapper desktopFlexDirection="row">
-        <ItemWrap width="100px" height="100px">
-          <Image src={Camera} alt="camera" />
-        </ItemWrap>
-        <ItemWrap width="100px" height="100px">
-          <Image src={Computer} alt="computer" />
-        </ItemWrap>
-      </FlexWrapper>
-      <FlexWrapper desktopFlexDirection="row">
-        <ItemWrap width="100px" height="100px">
-          <Image src={Car} alt="car" />
-        </ItemWrap>
-        <ItemWrap width="100px" height="100px">
-          <Image src={Electronics} alt="electronics" />
-        </ItemWrap>
-      </FlexWrapper>
+    <Section desktopHeight="500px" tabletHeight="500px" mobileHeight="1000px">
       Interests
+      <MediaQuery minWidth={sizes.tablet + 1}>
+        <FlexWrapper
+          desktopFlexDirection="row"
+          tabletFlexDirection="row"
+          mobileFlexDirection="Column"
+          mobileHeight="100%">
+          <Image src={Camera} alt="camera" height="200px" width="200px" />
+
+          <Image src={Computer} alt="computer" />
+        </FlexWrapper>
+        <FlexWrapper
+          desktopFlexDirection="row"
+          tabletFlexDirection="row"
+          mobileFlexDirection="Column"
+          mobileHeight="100%">
+          <Image src={Car} alt="car" />
+
+          <Image src={Electronics} alt="electronics" />
+        </FlexWrapper>
+      </MediaQuery>
+      <MediaQuery maxWidth={sizes.tablet}>
+        <Image src={Camera} alt="camera" height="225px" width="225px" />
+
+        <Image src={Computer} alt="computer" height="225px" width="225px" />
+        <Image src={Car} alt="car" height="225px" width="225px" />
+
+        <Image
+          src={Electronics}
+          alt="electronics"
+          height="225px"
+          width="225px"
+        />
+      </MediaQuery>
     </Section>
   )
 }
