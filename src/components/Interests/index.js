@@ -23,7 +23,7 @@ const initModalData = [
     name: "car",
     isOpen: false,
     modalTitle: "Electric Vehicles and Renewable Energy",
-    modalDescription: Descriptions.electricCar,
+    modalDescription: Descriptions.energyVehicles,
     modalIcon: ""
   },
   {

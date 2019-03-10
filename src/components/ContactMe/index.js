@@ -47,7 +47,7 @@ const index = () => {
         mobileWidth="80%"
         mobileHeight="100%"
         marginTop="0px">
-        <h3>Questions? Please Contact Me Below!</h3>
+        <h3 style={{textAlign: "center"}}>Questions? Please Contact Me Below!</h3>
         
         <StyledForm>
           <Form.Field>

@@ -39,7 +39,7 @@ const index = () => {
         mobileWidth="80%">
         <DescriptionWrapper paddingLeft="10px" paddingRight="10px">
           <SimpleFlex alignItems="center">
-            <h3>{leftColumnTitle}</h3>
+            <h3 style={{textAlign: "center"}}>{leftColumnTitle}</h3>
           </SimpleFlex>
           <p>{leftColumnShortDescription}</p>
         </DescriptionWrapper>
@@ -71,7 +71,7 @@ const index = () => {
         mobileWidth="80%">
         <DescriptionWrapper paddingLeft="10px" paddingRight="10px">
           <SimpleFlex alignItems="center">
-            <h3>{rightColumnTitle} </h3>
+            <h3 style={{textAlign: "center"}}>{rightColumnTitle} </h3>
           </SimpleFlex>
           <p>{rightColumnShortDescription}</p>
         </DescriptionWrapper>

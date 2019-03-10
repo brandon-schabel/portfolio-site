@@ -21,9 +21,12 @@ const index = () => {
         Brandon Schabel
       </h2>
       <Line></Line>
-      <h3 style={{ color: "white" }}>
-        Software Engineer Located In San Francisco, CA
+      <h3 style={{ color: "white", textAlign: "center"}}>
+        Software Engineer In San Francisco, CA
       </h3>
+      <h4 style={{ color: "white", textAlign: "center", paddingBottom: "50px"}}>
+        Currently Seeking New Opportunities 
+      </h4>
       <ItemWrap flexDirection="row" alignItems="center"
         justifyContent="center" height="100%"
       >
