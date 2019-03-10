@@ -57,8 +57,8 @@ const index = () => {
           <Modal.Content>
             <p>{leftModalDescription}</p>
           </Modal.Content>
-          <Modal.Actions>
-            <Button basic color="white" inverted onClick={closeModal1}>
+          <Modal.Actions style={{marginBottom: "40px"}}>
+            <Button basic color="white" inverted onClick={closeModal1} >
               <Icon name="remove" /> Close
             </Button>
           </Modal.Actions>
@@ -86,10 +86,10 @@ const index = () => {
           open={isModal2Open}
           onClose={closeModal2}>
           <Header icon="terminal" content={rightColumnTitle} />
-          <Modal.Content>
-            <p>{rightModalDescription}</p>
+          <Modal.Content style={{paddingBottom: "20px"}}>
+            <p >{rightModalDescription}</p>
           </Modal.Content>
-          <Modal.Actions>
+          <Modal.Actions style={{marginBottom: "40px"}}>
             <Button basic color="white" inverted onClick={closeModal2}>
               <Icon name="remove" />Close
             </Button>
