@@ -9,7 +9,7 @@ export const StyledImage = styled.img`
   transition: all .2s ease-in;
   cursor: ${({clickPointer}) => clickPointer ? 'pointer' : 'auto'};
   border-radius: ${({circle}) => circle ? '100%' : '0px'};
-
+  border: ${({enableBorder}) => enableBorder ? '2px solid white': '0px'};
   &:hover{
     transition: all .2s ease-in-out;
     transform: scale(1.1);

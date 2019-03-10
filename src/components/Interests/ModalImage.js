@@ -26,7 +26,7 @@ const ModalImage = ({ data, closeModalHandler, openModalHandler, children  }) =>
         onClose={handleCloseModal}>
         <Header icon={data.icon} content={data.modalTitle} />
         <Modal.Content>
-          <p>{data.modalDescription}</p>
+          {data.modalDescription}
         </Modal.Content>
         <Modal.Actions>
           <Button basic color="white" inverted onClick={handleCloseModal}>

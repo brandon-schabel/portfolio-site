@@ -2,34 +2,35 @@ import React, { useState } from "react"
 import { Section } from "../index"
 import Desktop from "./Desktop"
 import Mobile from "./Mobile"
+import {Descriptions} from './Descriptions'
 
 const initModalData = [
   {
     name: "camera",
     isOpen: false,
     modalTitle: "Photography",
-    modalDescription: "This is the description",
+    modalDescription: Descriptions.photography,
     modalIcon: ""
   },
   {
     name: "computer",
     isOpen: false,
     modalTitle: "Computers and Programming",
-    modalDescription: "This is the description",
+    modalDescription: Descriptions.computers,
     modalIcon: ""
   },
   {
     name: "car",
     isOpen: false,
     modalTitle: "Electric Vehicles and Renewable Energy",
-    modalDescription: "This is the description",
+    modalDescription: Descriptions.electricCar,
     modalIcon: ""
   },
   {
     name: "electronics",
     isOpen: false,
     modalTitle: "DIY Electronics",
-    modalDescription: "This is the description",
+    modalDescription: Descriptions.electronics,
     modalIcon: ""
   }
 ]
@@ -62,7 +63,7 @@ const index = () => {
   }
 
   return (
-    <Section desktopHeight="625px" tabletHeight="625px" mobileHeight="1000px" backgroundColor="#34495e">
+    <Section desktopHeight="625px" tabletHeight="625px" mobileHeight="1100px" backgroundColor="#34495e">
       <h2 style={{color: 'white'}}>Interests</h2>
       <Desktop
         modalData={modalData}

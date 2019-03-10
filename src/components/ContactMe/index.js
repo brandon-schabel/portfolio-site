@@ -36,21 +36,19 @@ const index = () => {
       })
   }
   return (
-    <Section desktopHeight="500px" tabletHeight="450px" mobileHeight="375px" backgroundColor="#ecf0f1">
-      <h3>Questions? Please Contact Me Below!</h3>
-      {formSubmitted && (
-        <div>
-          <h3>Thank you for contacting me, I will get back to you shortly.</h3>
-          <br />
-        </div>
-      )}
+    <Section
+      desktopHeight="480px"
+      tabletHeight="480px"
+      mobileHeight="480px"
+      backgroundColor="#ecf0f1">
       <FlexWrapper
         desktopWidth="30%"
         tabletWidth="40%"
         mobileWidth="80%"
         mobileHeight="100%"
-        marginTop="20px"
-        >
+        marginTop="0px">
+        <h3>Questions? Please Contact Me Below!</h3>
+        
         <StyledForm>
           <Form.Field>
             <label>Your Name</label>
@@ -78,6 +76,14 @@ const index = () => {
           <Button type="submit" onClick={handleSubmit} disabled={formSubmitted}>
             Submit
           </Button>
+          {formSubmitted && (
+          <div>
+            <h3>
+              Thank you for contacting me, I will get back to you shortly.
+            </h3>
+            <br />
+          </div>
+        )}
         </StyledForm>
       </FlexWrapper>
     </Section>

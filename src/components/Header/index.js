@@ -3,6 +3,7 @@ import { Section, Image, FlexWrapper } from ".."
 import ProfilePic from "./assets/profile_pic.jpeg"
 import { Icon } from "semantic-ui-react"
 import ItemWrap from "../shared/ItemWrap"
+import {Line} from './styles'
 
 const index = () => {
   return (
@@ -11,11 +12,18 @@ const index = () => {
       tabletHeight="500px"
       mobileHeight="500px"
       backgroundColor="#2980b9">
-      <Image src={ProfilePic} circle={true} />
+      <FlexWrapper mobileHeight="340px"
+                  tabletHeight="350px"
+                  desktopHeight="370px"
+      >
+      <Image src={ProfilePic} circle={true} enableBorder={true}/>
+      <h2 style={{ color: "white" }}>
+        Brandon Schabel
+      </h2>
+      <Line></Line>
       <h3 style={{ color: "white" }}>
         Software Engineer Located In San Francisco, CA
       </h3>
-      <h2 style={{ color: "white" }}>_____________________________</h2>
       <ItemWrap flexDirection="row" alignItems="center"
         justifyContent="center" height="100%"
       >
@@ -26,6 +34,7 @@ const index = () => {
         <Icon size="huge" inverted name="github square" />
         </a>
       </ItemWrap>
+      </FlexWrapper>
     </Section>
   )
 }
