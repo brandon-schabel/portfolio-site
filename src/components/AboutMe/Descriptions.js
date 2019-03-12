@@ -19,7 +19,7 @@ export const leftModalDescription = (
     <br />
     &nbsp;&nbsp;&nbsp;&nbsp;In addition to my main
     job, I also had the opportunity to serve on the base honor guard where we
-    went and did honors for fallen veterans. Additionally, I served on the
+    went and performned honors for fallen veterans. Additionally, I served on the
     squadron Booster Club as Treasurer; we raised funds to hold events, such as
     during holidays, for the squadron. During my time at Travis my career field
     was merged with another career field called Airfield Systems. During that

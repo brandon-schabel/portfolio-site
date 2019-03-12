@@ -15,11 +15,10 @@ export const Descriptions = {
   ),
   computers: (
     <div>
-      I have always been fascinated with computers for nearly as long as I can
-      remember. They've gone from being extremely expensive and very limiting to
-      be very cheap and extremely robust. I love learning new things and that's
-      why computers and programming are always fun. I can tinker with it all day
-      every day and I will never know everything there is to know.
+      I’ve always had an interest in computer programming, specifically web
+      development. This lead to researching and finding the resources I would
+      need to create my own applications. This growth in skills allowed me to be
+      awarded an internship at Career Karma.
     </div>
   ),
   energyVehicles: (
