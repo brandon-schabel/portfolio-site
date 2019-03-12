@@ -55,7 +55,7 @@ const index = () => {
           onClose={closeModal1}>
           <Header icon="fighter jet" content={leftColumnTitle} />
           <Modal.Content>
-            <p>{leftModalDescription}</p>
+            <div>{leftModalDescription}</div>
           </Modal.Content>
           <Modal.Actions style={{marginBottom: "40px"}}>
             <Button basic color="white" inverted onClick={closeModal1} >
@@ -73,7 +73,7 @@ const index = () => {
           <SimpleFlex alignItems="center">
             <h3 style={{textAlign: "center"}}>{rightColumnTitle} </h3>
           </SimpleFlex>
-          <p>{rightColumnShortDescription}</p>
+          <div>{rightColumnShortDescription}</div>
         </DescriptionWrapper>
         <Modal
           trigger={
