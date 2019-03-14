@@ -1,4 +1,5 @@
 #To deploy
+This project is hosted [here](https://bschabel.com)
 npm run build
 firebase deploy
 
